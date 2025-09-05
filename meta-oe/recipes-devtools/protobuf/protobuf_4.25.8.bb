@@ -21,6 +21,8 @@ SRC_URI:append:mipsel:toolchain-clang = " file://0001-Fix-build-on-mips-clang.pa
 
 S = "${WORKDIR}/git"
 
+CVE_PRODUCT = "google:protobuf protobuf:protobuf google-protobuf protobuf-cpp"
+
 inherit cmake pkgconfig ptest
 
 PACKAGECONFIG ??= ""
